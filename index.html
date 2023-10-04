@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/index_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="home"> 
+
+  <div id="wrapper">
+
+    <div id="header">
+
+      <header>
+        <h1 id="title">Personal Portfolio - Adam Willis</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- -->
+
+    </div>
+
+    <div id="row">
+
+      <main>
+  
+        <h2>Introduction</h2>
+  
+        <p>My name is Adam Willis and this website contains my personal portfolio. </p> 
+        <p>I grew up in Liverpool and came to Sheffield to study Computer Science at the University of Sheffield. I am currently in the first year of my degree. </p> 
+        <p>Outside of my studies, I enjoy indoor and outdoor bouldering and watching basketball.</p>
+  
+      </main>
+
+      <div id="figure">
+
+        <div id="photo">
+          <img src="img/photo.jpg" alt="photo of flatmates" width="80%" > 
+        </div>
+    
+        <div id="caption">
+          <p>Me (centre) and my flatmates</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <main>
+  
+      <h2>Content</h2>
+  
+      <p>This website includes: </p>
+        
+      <ul>
+        <li>Information on the Computer Science degree programme</li>
+        <li>Information about the Sheffield Graduate Atrributes and mySkills system</li>
+        <li>A quiz about me</li>
+        <li>An accessibility page</li>
+        <li>A legal and security page</li>
+        <li>A design page</li>
+        <li>A testing page</li>
+        <li>A contact form</li>
+      </ul>
+        
+    </main>
+      
+    </div>
+
+    <div id="footer">
+  
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>
+
+    </div>
+
+  </div>
+
+</body>

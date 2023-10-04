@@ -1,0 +1,176 @@
+/* CSS file for AdamWillis_com1008 */
+/* Written by: Adam Willis */
+
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgb(212, 19, 171);
+    font-family: "Montserrat", sans-serif;
+    min-width: 320px;
+    max-width: 1400px;
+    margin: auto;
+} 
+
+header {
+    background-color: rgb(110, 110, 110);
+    font-size: 0.6em;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    margin-bottom: 3em;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between; /*allows logo to stick to the right hand side of the screen */
+}
+
+#logo {
+    margin: 0em;
+}
+
+span {
+    margin: 1em;
+    padding: 0.5em;
+    padding-top: 0.6em;
+    padding-bottom: 0em;
+    background-color: rgb(110, 110, 110);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+span:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    background-color: rgb(110, 110, 110);
+    font-size: 0.75em;
+    color: rgb(255, 255, 255);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 2em;
+}
+
+a {
+    text-decoration:underline;
+    color: rgb(255, 255, 255);
+}
+
+aside {
+    background-color: rgb(110, 110, 110);
+    font-size: 0.75em;
+    color: rgb(255, 255, 255);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+#footnav {
+    background-color: rgb(110, 110, 110);
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+}
+  
+#footnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.6em;
+    transition: 0.3s;
+}
+  
+
+#footnav a:hover {
+    color: rgb(212, 19, 171);
+}
+
+#footer {
+    margin-top: auto; /*makes footer stick top the bottom of the website*/
+}
+
+footer {
+    background-color: rgb(110, 110, 110);
+    font-size: 0.75em;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    font-weight: bolder;
+    margin-bottom: 0;
+  
+}
+
+footer p {
+    text-align: right;
+    font-size: 0.5em;
+}
+
+/*tweakpoint for wider displays; increases font size*/
+@media screen and (min-width: 700px) { 
+    
+    header, main, aside, #caption, #footnav a, footer p {
+        font-size: 1em;
+    }
+
+}
+
+/*breakpoint for desktop displays*/
+@media screen and (min-width: 1000px) {
+
+    #row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
+
+
+
+/* Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} */
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: rgb(110, 110, 110); 
+    overflow-x: hidden; 
+    padding-top: 5em; 
+    transition: 0.5s; 
+}
+  
+.sidenav a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: 0.3s;
+}
+  
+  
+.sidenav a:hover {
+    color: rgb(212, 19, 171);
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+/* -------------------------- */
+
+

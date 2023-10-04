@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis" />
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/legal_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="legal"> 
+
+  <div id="wrapper">
+
+    <div id="header">
+
+      <header>
+        <h1 id="title">Legal and Security</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"/> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"/></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- --------------- -->
+
+    </div>
+  
+    <div id="row">
+  
+      <main>
+  
+        <h2>Legal Statement</h2>
+        <p>My website is my original work therefore, it is copyright protected. All images used on the website are licensed or copyright-free so that all permissions are respected and there are no infringements. </p>
+        <p>The General Data Protection Regulation (GDPR) was created in 2018 and regulates what the website owners can do with the data collected from the website. This only data collected in this website is through the contact form. I believe that asking for the name and e-mail of the user is proportional to the use of the form. The data collected will only be used in sending the form and will not be shared. The form is also optional, so every user is automatically opting out until they decide to fill out the form. </p>  
+        
+      </main>
+  
+      <aside>
+  
+        <h2>Security</h2>
+        <p>This website is not publicly available, so the data collected in the contact form is very secure and not in any danger of being accessed by an unauthorised source. However, if I were to publish the website as a public domain, I would make sure the data is secure by avoiding the Open Web Application Security Project (OWASP) Top 10 security risks. </p>  
+        <a href="https://owasp.org/www-project-top-ten/">OWASP, 2022, OWASP Top Ten, Accessed: 11/2022, {https://owasp.org/www-project-top-ten/}</a> 
+  
+      </aside> 
+    
+    </div>
+
+    <div id="footer">
+  
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>
+
+    </div>
+
+  </div>
+    
+</body>

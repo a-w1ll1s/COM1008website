@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis" />
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/design_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="design"> 
+
+  <div id="wrapper">
+
+    <div id="header">
+
+      <header>
+        <h1 id="title">Design</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"/> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"/></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- --------------- -->
+
+    </div>
+  
+    <main>
+  
+      <h2>Introduction</h2>
+      <p>When I was designing this website, I wanted to create a colourful, modern-looking website. To do this, I first decided on a colour palette that would be used throughout. I chose the grey and pink as it had a modern feel while still being interesting and vibrant. Grey also had a nice contrast with the white text which made it more accessible. I then decided on the design of the website elements. I found that giving each element its own visible area split up the website into more readable chunks and giving each area rounded corners made it modern and smooth. </p>
+      <p>I was able to design the website with Mobile-First Responsive Web Design by using Firefox’s Responsive Design Mode tool, which allows you to set the size of the viewport. This gave me the opportunity to see how the website would look on many different devices and made creating and tweaking the website for a phone much simpler.</p>
+  
+    </main>
+  
+    <aside>
+  
+      <h2>Site Map</h2>
+      
+    </aside>
+
+    <div id="row">
+  
+      <div id="photo">
+        <img src="img/site_map.png" alt="site map" width="80%" />
+      </div>
+  
+      <aside>
+  
+        <p>I chose this site map design as I believe it helps to make the website easier to understand. The different menu systems group the pages into website content (sidebar nav) and website information (footer nav) for logical navigation. This site map also adheres to the 3-click rule, as all content can be reached with fewer than 3 clicks, which means finding information or a specific page is a lot less confusing for users.</p>
+      
+      </aside> 
+
+    </div>
+  
+    <aside>
+  
+      <h2>Design Mock-ups</h2>
+      
+    </aside>
+  
+    <div id="row">
+
+      <div id="photo">
+        <img src="img/mobile_frame.png" alt="mobile wireframe" width="60%" />
+      </div>
+  
+      <div id="photo">
+        <img src="img/wide_frame.png" alt="wide wireframe" width="60%" />
+      </div>
+  
+      <div id="photo">
+        <img src="img/mon_frame.png" alt="monitor wireframe" width="80%" />
+      </div>
+
+    </div>
+  
+    <aside>
+  
+      <p>My initial designs started with the mobile design as this website was designed as Mobile-First. It is a linear design with a header, elements, and a footer – I decided on the menu systems later. I believe this design is the best for a mobile phone viewport as it doesn’t clutter the screen and each element has plenty of space which helps with readability. The wide viewport design is very similar to the mobile design as the viewport was still limited in size. I decided to put a breakpoint between the wide display and the desktop display so that I could create the design shown in the mock-ups. The elements are no longer linear, but on a desktop viewport it is still legible.  </p>
+      
+    </aside> 
+  
+    <aside>
+  
+      <h2>Menu System</h2>
+      <p>I decided to use the off-canvas navigation method from responsivenavigation.net as it allowed me to display more content on the page. This is because it removes the area for the navigation menu as well as the navigation links. It also helps to solidify the modern website theme that I was going for. I got my code from W3schools.</p>
+      <a href="https://www.w3schools.com/howto/howto_js_off-canvas.asp">W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp}</a>
+        
+    </aside> 
+
+    <div id="footer">
+  
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>
+
+    </div>
+
+  </div>
+    
+</body>

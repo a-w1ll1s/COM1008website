@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis" />
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/degree_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="degree"> 
+
+  <div id="wrapper">
+
+    <div id="header">
+
+      <header>
+        <h1>Computer Science Degree Programme</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"/> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"/></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- --------------- -->
+    
+    </div>
+
+    <div id="row">
+  
+      <main>
+  
+        <h2>Overview</h2>
+  
+        <p>Computer Science BSc is a three year accredited degree with the possibility of a year in industry between the second and third years. </p>
+        <p>It provides skills that will be helpful in industry, such as finding solutions to problems, as well as making you familiar with all practical skills needed. </p>
+        <p>The first year is made up of 8 modules that will cover the basic principles needed in the rest of the degree.</p>
+  
+        <a href="https://www.sheffield.ac.uk/undergraduate/courses/2023/computer-science-industrial-placement-year-bsc#coursedescription">Extra Information</a>
+      
+      </main>
+  
+      <div id="photo">
+        <img src="img/bcs_degree.webp" alt="bcs accredited" width="80%" />
+      </div>
+
+    </div>
+  
+    <main>
+      <h2>Modules</h2>
+    </main>
+  
+    <div id="modules">
+  
+      <aside>
+
+        <h3>Introduction to Software Engineering</h3>
+        <p>This module covers the basic concepts needed to develop basic software that covers all requested requirements. It uses group work to allow the students to experience the practical side of software engineering.</p>
+        <img src="img/soft_eng.png" alt="software engineering" width="60%" /> 
+
+      </aside>
+  
+      <aside>
+  
+        <h3>Foundations Of Computer Science</h3>
+        <p>This module provides all mathematical techniques and ideas necessary for the understanding of the mathematics behind the computer science seen in the first year of the course. </p>
+        <img src="img/found.jpg" alt="foundations of computer science" width="60%" />
+
+      </aside>
+  
+      <aside>
+  
+        <h3>Java Programming</h3>
+        <p>As the name suggests, this module covers the Java programming language from the basics , while encouraging well-written and readable programs. The module also introduces object-oriented programming.</p>
+        <img src="img/java.png" alt="java programming" width="60%" />
+  
+      </aside>
+  
+      <aside>
+  
+        <h3>Machines and Intelligence</h3>
+        <p>This module covers the history and theory of Artificial Intelligence from its first concepts to modern day research. The practical side of the module covers the algorithms used in programming robots and AI.</p>
+        <img src="img/miro.jpg" alt="machines and intelligence" width="60%" />
+
+      </aside>
+
+    </div>
+
+    <div id="modules">
+
+      <aside>
+  
+        <h3>Devices and Networks</h3>
+        <p>This module starts by explaining the building blocks of a computer device such as digital logic and computer arithmetic. The module then moves on to covering networks and their protocols.</p>
+        <img src="img/devices.webp" alt="devices and networks" width="60%" />
+
+      </aside>
+  
+      <aside>
+  
+        <h3>Web and Internet Technology</h3>
+        <p>This module focuses on creating responsive, interactive websites using HTML, CSS and JavaScript. The module also covers accessibility issues, legal issues and security issues that may arise when creating websites.</p>
+        <img src="img/boxmodel.png" alt="web and internet technology" width="60%" />
+
+      </aside>
+  
+      <aside>
+  
+        <h3>Introduction to Algorithms and Data Structures</h3>
+        <p>This module provides an understanding of algorithms, which one are of the most important aspects of computer science. Designing algorithms and analysing their efficiency is a big part of the module.</p>
+        <img src="img/algorithm.jpg" alt="intoduction to algorithms" width="60%" /> 
+      </aside>
+  
+      <aside>
+  
+        <h3>Global Engineering Challenge Week</h3>
+        <p>The GECW is a project taken on in teams of 5 to 6 students of different courses. Each challenge falls under one of Water, Waste Management, Energy and Digital. It is designed to help with employable and transferable skills for the students.</p>
+        <img src="img/group.jpg" alt="global engineering challenge week" width="60%" /> 
+      </aside>
+
+    </div>
+    
+    <div id="footer">
+  
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>  
+
+    </div>
+
+  </div>
+    
+</body>

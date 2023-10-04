@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis" />
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/testing_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="testing"> 
+
+  <div id="wrapper">
+
+    <div id="content">
+
+      <header>
+        <h1 id="title">Testing</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"/> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"/></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- --------------- -->
+  
+  
+  
+      <main>
+  
+        <h2>Optimisation</h2>
+        <p>My website is quite simple in its design and content which means the pages load at a fast rate. Therefore, not much optimisation is required. The quiz page is an exception because it loads 9 images when opened which could cause delay on slower devices. To optimise this page and its image loading, I used compressed images or WEBP images as they are easier to load than PNGs or JPEGs.</p>
+        
+      </main> 
+  
+      <main>
+  
+        <h2>Debugging</h2>
+        <p>I used the W3C Markup Validation Service to debug my HTML code:</p>
+        <a href="https://validator.w3.org/">W3C, 2022, W3C Markup Validation Service, Accessed: 11/2022, {https://validator.w3.org/}</a>
+        <p>I used the W3C CSS Validation Service to debug my CSS code:</p>
+        <a href="https://jigsaw.w3.org/css-validator/validator">W3C, 2022, W3C CSS Validation Service, Accessed: 11/2022, {https://jigsaw.w3.org/css-validator/validator}</a>
+        
+      </main> 
+
+      <div id="row">
+
+        <div id="photo">
+          <img src="img/html_test.png" alt="html test" width="80%">
+        </div>
+  
+        <div id="photo">
+          <img src="img/css_test.png" alt="css test" width="80%">
+        </div>
+
+      </div>
+
+      <main>
+
+        <p>The screenshots show the validation results for the HTML and CSS of the Home page. The only issue the HTML validator flagged was the size metric I was using for images. However, it was chosen with responsive design in mind, so it is useful for this application of the metric. The CSS validator returned no issues. </p>
+
+      </main>
+         
+      <main>
+  
+        <h2>Browser Testing</h2>
+        <p>To test the responsive design of my website, it was important to view it on different devices. However, because my website was not available over the internet, having to download new HTML and CSS every time I wrote new code or tweaked existing code made testing on other physical devices very inefficient. To solve this issue, I used Firefox’s Responsive Design Mode. This mode allows you to choose the viewport size and the website acts accordingly. For example, if you set the viewport to a mobile phone screen size the website will act as it would on the mobile phone. This was very helpful for designing and testing the website as it streamlined the process of updating code.  </p>
+        
+      </main> 
+
+      <div id="row">
+
+        <div id="photo">
+          <img src="img/phone_test.png" alt="phone test" width="80%">
+        </div>
+  
+        <div id="photo">
+          <img src="img/wide_test.png" alt="wide test" width="80%">
+        </div>
+  
+        <div id="photo">
+          <img src="img/mon_test.png" alt="desktop test" width="80%">
+        </div>
+
+      </div>
+
+      <main>
+  
+        <h2>Accessibility</h2>
+        <p>To test accessibility on the website, I used the WAVE plug-in: </p>
+        <a href="https://wave.webaim.org/">WAVE, 2022, WAVE Web Accessibility Evaluation Tools, Accessed: 11/2022, { https://wave.webaim.org/}</a>
+
+      </main>
+
+      <div id="photo">
+        <img src="img/access_test.png" alt="accessibility test" width="80%">
+      </div>
+
+      <main>
+
+        <p>This screenshot shows the results of the WAVE evaluation of the home page of the website. As shown, this page has no errors, good contrast and 4 accessibility features like alternative text for pictures. However,  there are two alerts. One alert applies to the alternative text for the logo. Because the logo is not essential for the understanding of the content, WAVE considers alternative text for it to be unnecessary. I decided to keep the alternative text in as the logo is at the top of the page and the text would not disrupt any important content. The other alert was related to the menu button. WAVE suggested that it may not accessible. However, I used an image for the menu button, so the alternative text solves this issue.  </p>
+
+      </main>
+      
+    </div>
+
+    <div id="footer">
+
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>
+    
+    </div>
+
+  </div>
+    
+</body>

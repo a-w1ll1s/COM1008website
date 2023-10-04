@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis" />
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/accessibility_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="accessibility"> 
+
+  <div id="wrapper">
+
+    <div id="content">
+
+      <header>
+        <h1 id="title">Accessibility</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"/> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"/></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- --------------- -->
+  
+  
+  
+      <main>
+  
+        <h2>Accessibility Statement</h2>
+        <p>This website provides a high level of accessibility and is suitable for most people to use, while also facilitating screen-readers and other tools. No pages or content are unavailable for people with limited accessibility. There is a contact form for reporting issues with accessibility or suggesting changes.</p>
+  
+      </main>
+  
+      <aside>
+  
+        <h2>Accessibility in this Website</h2>
+  
+        <p>I used the accessibility principles POUR (Perceivable, Operable, Understandable, Robust) to make sure my website had a good standard of accessibility. POUR was created by the Web Accessibility Initiative, a reputable source on website accessibility. </p>
+        <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/">W3C Web Accessibility Initiative, 2022, Accessibility Principles, Accessed 11/2022, {https://www.w3.org/WAI/fundamentals/accessibility-principles/} </a>
+        <p>Perceivable covers the content which is sensed. I made the text and background high contrast to aid legibility. Non-textual content like images and forms have captions/labels to show what they are for, and images also have alternative text to convey its meaning when using screen-readers or other accessibility tools.</p>
+        <p>Operable covers the functionality of the website. The website can be navigated with keyboard and all user functionality on the website can be accessed and operated by keyboard. This means users that cannot use a mouse can still access every part of the website.</p>
+        <p>Understandable makes sure the website works in a logical way. To ensure this, the website has a consistent navigation system for every page and instructions for every interactive part of the website. </p> 
+        <p>Robust simply refers to the website working in different environments and with many accessibility tools. To check this, the website was tested on different browsers and on different viewports.</p>  
+        <p>POUR accessibility principles checklist:</p>
+        <a href="https://webaim.org/standards/wcag/checklist">WebAIM, 2022, WCAG 2 checklist, Accessed 11/2022, {https://webaim.org/standards/wcag/checklist}</a>
+     
+      </aside> 
+
+    </div>
+
+    <div id="footer">
+  
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>
+
+    </div>
+
+  </div>
+    
+</body>

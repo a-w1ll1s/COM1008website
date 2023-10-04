@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Willis" />
+  <title>Adam Willis - Personal Portfolio</title>
+  <link rel="stylesheet" href="css/quiz_ss.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+</head>
+
+<body id="quiz"> 
+
+  <div id="wrapper">
+
+    <div id="header">
+
+      <header>
+        <h1>Quiz</h1>
+        <figure id="logo"> <img src="img/logo.jpg" alt="logo" width="60"/> </figure> 
+      </header>
+  
+  
+  
+      <!-- Code cited from W3schools, 2022, How To - Off-canvas Menu, Accessed 11/2022, {https://www.w3schools.com/howto/howto_js_off-canvas.asp} -->
+  
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="degree.html">Computer Science Degree Programme</a>
+        <a href="attributes.html">Sheffield Graduate Attributes and mySkills</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()"><img src="img/menu.png" alt="menu" width="20"/></span>
+  
+      <script>
+  
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+  
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+  
+      </script>
+  
+      <!-- --------------- -->
+
+    </div>
+  
+    <main>
+  
+      <h2>Rules</h2>
+      <p>Each questions consists of the question and three pictures. Click or tap on the picture you think is the right answer.</p>
+  
+    </main>
+  
+    <aside>
+      <h2>Question 1</h2>
+      <p>Who is my favourite band?</p>
+    </aside>
+
+    <div id="ans">
+  
+      <div id="answer_right" tabindex="1">
+  
+        <img id="pic" src="img/foos.avif" alt="foo fighters" width="80%" />
+        <p>1) Foo Fighters</p>
+  
+      </div>
+  
+      <div id="answer_wrong" tabindex="1">
+  
+        <img id="pic" src="img/greenday.webp" alt="green day" width="80%" /> 
+        <p>2) Green Day</p>
+  
+      </div>
+  
+      <div id="answer_wrong" tabindex="1">
+  
+        <img id="pic" src="img/killers.jpg" alt="the killers" width="80%" /> 
+        <p>3) The Killers</p>
+        
+      </div>
+    
+    </div>
+  
+    <aside>
+      <h2>Question 2</h2>
+      <p>What basketball team do I support?</p>
+    </aside>
+
+    <div id="ans">
+      
+      <div id="answer_wrong" tabindex="1">
+  
+        <img id="pic" src="img/blazers.webp" alt="portland trailblazers" width="60%" />
+        <p>1) Portland Trailblazers</p>
+  
+      </div>
+  
+      <div id="answer_wrong" tabindex="1">
+  
+        <img id="pic" src="img/cavs.png" alt="cleveland cavaliers" width="60%" /> 
+        <p>2) Cleveland Cavaliers</p>
+  
+      </div>
+  
+      <div id="answer_right" tabindex="1">
+  
+        <img id="pic" src="img/mavs.png" alt="dallas mavericks" width="60%" /> 
+        <p>3) Dallas Mavericks</p>
+  
+      </div>
+
+    </div>
+  
+    <aside>
+      <h2>Question 3</h2>
+      <p>What is my favourite TV series?</p>
+    </aside>
+
+    <div id="ans">
+  
+      <div id="answer_wrong" tabindex="1">
+  
+        <img id="pic" src="img/community.jpg" alt="community" width="80%" />
+        <p>1) Community</p>
+        
+      </div>
+  
+      <div id="answer_right" tabindex="1">
+  
+        <img id="pic" src="img/bcs.jpg" alt="better call saul" width="80%" /> 
+        <p>2) Better Call Saul</p>
+  
+      </div>
+  
+      <div id="answer_wrong" tabindex="1">
+  
+        <img id="pic" src="img/topgear.webp" alt="top gear" width="80%" /> 
+        <p>3) Top Gear</p>
+  
+      </div>
+
+    </div>
+
+    <div id="footer">
+  
+      <div id="footnav">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="legal.html">Legal and Security</a>
+        <a href="design.html">Design</a>
+        <a href="testing.html">Testing</a>
+        <a href="contact.html">Contact</a> 
+      </div>
+  
+      <footer> 
+  
+        <p>&copy Adam Willis, 2022</p>
+  
+      </footer>
+
+    </div>
+
+  </div>
+    
+</body>
